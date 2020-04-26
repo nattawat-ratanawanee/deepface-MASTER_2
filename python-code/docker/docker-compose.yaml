@@ -1,0 +1,13 @@
+version: '2.2'
+
+services:
+  deepface-engine-api:
+    volumes:
+      - ./app:/app/:rw
+      - ./models:/models/:rw
+    working_dir: /app
+    container_name: deepface-engine-api
+    image: deepface-engine-image:1.0
+    ports: 
+      - "5000:5000"
+    command: ["python", "main.py"]

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <address>0.0.0.0</address>
+    <port>5000</port>
+    <gpu>False</gpu>
+    <cpu_core>1</cpu_core>
+    <model_dir>.\models\</model_dir>
+    <!-- <model_dir>./models/</model_dir> -->
+    <liveness_type>mini</liveness_type>
+    <facedetection>
+        <model_path>liveness\haarcascade_frontalface_alt.xml</model_path>
+    </facedetection>
+    <liveness_full>
+        <threshold>0.9</threshold>
+        <model_path>liveness\liveness-weights-improvement-final-faceBG.h5</model_path>
+        <image_size>125</image_size>
+    </liveness_full>
+    <liveness_mini>
+        <threshold>0.0</threshold>
+        <model_path>liveness\model_face_224_v2_best.h5</model_path>
+        <image_size>224</image_size>
+    </liveness_mini>
+    <deepface>
+        <model>senet50</model>
+        <vgg_model_path>vggface\rcmalli_vggface_tf_notop_senet50.h5</vgg_model_path>
+        <mtcnn_model_path>mtcnn\data\mtcnn_weights.npy</mtcnn_model_path>
+        <pooling>avg</pooling>
+        <image_size>224</image_size>
+    </deepface>
+</config> 
