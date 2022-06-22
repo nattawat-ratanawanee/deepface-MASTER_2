@@ -1,6 +1,6 @@
 matplotlib==3.0.2
 mtcnn==0.1.0
-numpy==1.16.0
+numpy==1.22.0
 pillow==5.3.0
 scipy==1.1.0
 tensorflow==1.12.0
