@@ -10,4 +10,4 @@ flask==1.0.2
 keras_vggface==0.6
 imutils==0.5.1
 pyinstaller==3.4
-setuptools==39.0.1
+setuptools==65.5.1
